@@ -1,0 +1,359 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.Page{
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+}
+
+.Banner{
+  width: 100%;
+  height: 40rem;
+  position:flex;
+  float:left;
+  top: 0;
+  left: 0;
+  background: #e16162;
+}
+
+.navbar{
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  background-color:#000;
+  z-index:100;
+}
+
+.Description{
+  background: #eff0f3;
+  position: relative;
+  float:left;
+  clear:left;
+}
+
+.Download{
+  background: #e16162;
+  float:left;
+  clear:left;
+}
+
+
+
+.non-anime:hover{
+  display: none;
+  visibility: hidden;
+}
+.anime:hover{
+  display: block;
+}
+
+.d-img{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 45%;
+  top: 50%;
+  width: 25px;
+}
+
+.d-img:hover{
+  width: 27px;
+}
+
+.title{
+  width: 60rem;
+  position: relative;
+  transform: translate(-50%,-50%);
+  top: 150%;
+  left: 50%;
+  animation: titleAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes titleAnimation {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity:0.7;
+  }
+  100%{
+    opacity: 1;
+    top: 55%;
+  }
+}
+
+.confetti{
+  position: absolute;
+  display: inline-flex;
+  right: 0;
+  top: 12%;
+}
+
+.confetti-1{
+  position: absolute;
+  right: 10%;
+  top: -300px;
+  z-index: 50;
+}
+
+.carousel-inner{
+  position: absolute;
+  display: inline-flex;
+  width: 50%;
+  height: 90%;
+  top: 5%;
+  overflow: hidden;
+  right: 5rem;
+}
+
+.slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-box{
+  display: flex;
+  position: absolute;
+  width: 50rem;
+  height: 38rem;
+  background: #eff0f3;
+  right: 60px;
+  top: 18px;
+  border-radius: 12px;
+  box-shadow: -2px -1px 15px 7px rgb(0 0 0 / 50%);
+
+}
+
+.message{
+  text-align: center;
+  width: 45%;
+  position: relative;
+  top: 35%;
+}
+
+.message-hover{
+  animation: messageAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes messageAnimation {
+  0%{
+    opacity: 0;
+    width:35%;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 1;
+    width: 45%;
+  }
+}
+
+.message-head{
+  font-family: 'Splash', cursive;
+  font-size:92px;
+}
+
+.message-head:hover{
+  font-family: 'Splash', cursive;
+  animation: messageHeadAnimation ease 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes messageHeadAnimation {
+  0%{
+    opacity: 1;
+    color: red;
+  }
+  50%{
+    color: green;
+  }
+  100%{
+    color: blue;
+  }
+}
+
+#social-access{
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  height: 35px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #000;
+  z-index:1000;
+}
+
+.social-icons{
+  color: #F9E4E1;
+  padding: 7px;
+  font-size:16px;
+}
+
+.social-icons:hover{
+  font-size:20px;
+}
+
+.twitter-btn:hover{
+  color: #1DA1F2;
+}
+
+.instagram-btn:hover{
+  color: #d6249f;
+}
+
+.email-btn:hover{
+  color: #EA4335;
+}
+
+.github-btn:hover{
+  color: #6cc644;
+}
+
+.facebook-btn:hover{
+  color: #4267B2;
+}
+
+.linkedin-btn:hover{
+  color: #2867B2;
+}
+
+.download-message{
+  text-align: center;
+  width: 45%;
+  position: relative;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.download-message-hover{
+  animation: downloadMessageAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes downloadMessageAnimation {
+  0%{
+    opacity: 0;
+    left:40%;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 1;
+    left:50%;
+  }
+}
+
+.d-msg{
+  color: #fff;
+}
+
+.d-msg-head{
+  font-size:36px;
+  font-family: 'Caveat', cursive;
+}
+
+.resume{
+  font-size:18px;
+  font-family: 'Signika', sans-serif;
+  font-weight:bold;
+  color: #000;
+}
+
+.github{
+  font-size:18px;
+  font-family: 'Signika', sans-serif;
+  font-weight:bold;
+  color: #000;
+  text-decoration: underline;
+}
+
+.github:hover{
+  color: green;
+  font-size:19px;
+}
+
+.button-signin{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 80%;
+  padding: 5px 36px;
+  background-color: #141E27;
+  border: 1.5px solid #141E27;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.button-signin::before{
+  content: " ";
+  position: absolute;
+  width: 9rem;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.3s;
+}
+
+.button-signin:hover{
+  background-color: #141E27;
+  padding: 7px 38px;
+  font-size: 22px;
+  border: none;
+}
+
+.button-signin:hover::before{
+  transform:skewX(30deg) translate(150%,-50%);
+  transition-delay: 0.1s;
+}
+
+.download-button-wrapper{
+  width: 12rem;
+  height: 4rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: block;
+  bottom: 10rem;
+}
+
+.show-passwd{
+  text-align: center;
+  width: 45%;
+  position: relative;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.show-passwd-s{
+  font-size:16px;
+  font-weight:bold;
+  cursor: pointer;
+}
+.show-passwd-s:hover{
+  color: #fff;
+}
